@@ -172,7 +172,7 @@
             data: mailform.serialize(),
             success:function(data){
                 $("#result").text(data.message);
-                $("#data").text("Newsletter APIFAKE: +mailform.attr('action')+"/"+mailform.serialize());
+                $("#data").text("Newsletter APIFAKE: "+mailform.attr('action')+"/"+mailform.serialize());
             }
         });
         return false;
